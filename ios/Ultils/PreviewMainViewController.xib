@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreviewMainViewController" customModule="react_native_preview_video" customModuleProvider="target">
+            <connections>
+                <outlet property="videoView" destination="HAj-H3-HHJ" id="hTV-Qg-gje"/>
+                <outlet property="view" destination="HAj-H3-HHJ" id="SSe-9P-5Vj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Qei-75-Pbd">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-x5-IiS">
+                    <rect key="frame" x="136.66666666666666" y="738" width="119.99999999999997" height="50"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="CXU-AB-hHa"/>
+                        <constraint firstAttribute="height" constant="50" id="yrI-Ra-ygb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Open Phtos"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="getviewo:" destination="-1" eventType="touchUpInside" id="Fd9-Cb-Sse"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAj-H3-HHJ">
+                    <rect key="frame" x="0.0" y="69" width="393" height="649"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hLT-gw-YRP"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5SD-x5-IiS" firstAttribute="centerX" secondItem="Qei-75-Pbd" secondAttribute="centerX" id="ANu-Kc-tPj"/>
+                <constraint firstItem="5SD-x5-IiS" firstAttribute="top" secondItem="HAj-H3-HHJ" secondAttribute="bottom" constant="20" id="Ieb-uL-j25"/>
+                <constraint firstItem="hLT-gw-YRP" firstAttribute="trailing" secondItem="HAj-H3-HHJ" secondAttribute="trailing" id="OS3-WN-Vxv"/>
+                <constraint firstItem="HAj-H3-HHJ" firstAttribute="top" secondItem="hLT-gw-YRP" secondAttribute="top" constant="10" id="PuM-js-Xvk"/>
+                <constraint firstItem="hLT-gw-YRP" firstAttribute="bottom" secondItem="5SD-x5-IiS" secondAttribute="bottom" constant="30" id="V85-C8-l5V"/>
+                <constraint firstItem="HAj-H3-HHJ" firstAttribute="leading" secondItem="hLT-gw-YRP" secondAttribute="leading" id="ypL-0g-RTs"/>
+            </constraints>
+            <point key="canvasLocation" x="-431" y="-29"/>
+        </view>
+    </objects>
+</document>
