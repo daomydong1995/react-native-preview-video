@@ -11,11 +11,15 @@ npm install react-native-preview-video
 ## Usage
 
 ```js
-import { multiply } from 'react-native-preview-video';
+import { NativeModules } from 'react-native';
 
 // ...
 
-const result = await multiply(3, 7);
+  NativeModules.PreviewVideo.showPreviewVideo({
+            url: ""
+          }).then((url: string) => {
+            console.log(url)
+          })
 ```
 
 ## Contributing
